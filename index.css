@@ -1,0 +1,660 @@
+:root {
+	--accent-color: #03eaff;
+	--white: #e6ebea;
+	--body-background-color: #01040f;
+	--skills-section-max-width-lg: 600px;
+	--aboutme-section-max-width-lg: 1000px;
+	--workex-section-max-width-lg: 800px;
+	--projects-section-max-width-lg: 900px;
+	--main-section-get-in-touch-lg: 700px;
+	--section-row-gap: 15px;
+	--gray: #9cb3b5;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: var(--white);
+	font-family: "Exo 2", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+}
+
+body {
+	background-color: var(--body-background-color);
+}
+
+body a {
+	display: inline-block;
+	margin-top: 1%;
+	margin-left: 3%;
+}
+
+.heading-link {
+	position: fixed;
+	text-decoration: none;
+	height: 5vh;
+}
+
+.heading {
+	display: flex;
+}
+
+.heading svg {
+	fill: var(--accent-color);
+}
+
+.details {
+	color: #f0ece4;
+	display: flex;
+	flex-direction: column;
+}
+
+.name-heading {
+	padding-left: 5px;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.desig-heading {
+	padding-left: 6px;
+	font-size: 8px;
+	letter-spacing: 1px;
+}
+
+.main {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.spacer-200 {
+	height: 200px;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-desig {
+	font-size: 50px;
+}
+
+.main-desig span {
+	font-size: 40px;
+}
+
+.main-prefix {
+	font-size: 20px;
+	padding-left: 5px;
+}
+
+.main-prefix-inner {
+	color: var(--accent-color);
+	font-size: 22px;
+	opacity: 90%;
+}
+
+.underline-wrapper {
+	background-color: var(--body-background-color);
+	height: 1px;
+	margin-top: 10px;
+	overflow: hidden;
+	margin-left: 32px;
+}
+
+.underline {
+	background-color: var(--accent-color);
+	height: 1px;
+	animation: slideRight 1s ease-out;
+}
+
+.hrzn-line {
+	background-color: var(--accent-color);
+	height: 1px;
+	opacity: 50%;
+	flex-grow: 1;
+	align-self: center;
+}
+
+.gradient-left {
+	margin-right: 10px;
+	background-image: linear-gradient(to left, #03eaff, #01040f 90%);
+}
+
+.gradient-right {
+	margin-left: 10px;
+	background-image: linear-gradient(to right, #03eaff, #01040f 90%);
+}
+
+.main-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+}
+
+.main-section-skills-heading {
+	display: flex;
+	align-self: stretch;
+	justify-content: center;
+}
+
+.main-section-skills-heading p {
+	display: flex;
+	align-items: center;
+	margin-bottom: var(--section-row-gap);
+	max-width: var(--skills-section-max-width-lg);
+	flex-grow: 1;
+}
+
+.main-section-skills {
+	display: flex;
+	opacity: 0%;
+	max-width: var(--skills-section-max-width-lg);
+	justify-content: center;
+	animation: fadeIn 1.5s ease-out forwards;
+	animation-delay: 1s;
+	flex-wrap: wrap;
+}
+
+.main-section-skill-box {
+	margin: 10px;
+	padding: 20px 10px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(230, 235, 234, 0.1);
+	flex: 0 1 160px;
+	box-sizing: border-box;
+	min-height: 210px;
+}
+
+.main-section-skill-icon {
+	fill: var(--accent-color);
+	opacity: 85%;
+}
+
+.main-section-skill-name {
+	font-size: 18px;
+	width: 90%;
+	font-weight: 600;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.main-section-skill-desc {
+	padding-top: 5px;
+	line-height: 18px;
+	width: 80%;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.main-section-aboutme {
+	opacity: 0%;
+	display: flex;
+	flex-direction: column;
+	max-width: var(--aboutme-section-max-width-lg);
+	align-items: center;
+}
+
+.main-section-heading-text {
+	font-size: 20px;
+}
+
+.section-heading-number {
+	font-size: 14px;
+	padding-top: 5px;
+	padding-right: 5px;
+	color: var(--accent-color);
+	opacity: 60%;
+}
+
+.main-section-heading {
+	display: flex;
+	align-self: stretch;
+	margin-bottom: var(--section-row-gap);
+}
+
+.main-section-aboutme-desc {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 15%;
+}
+
+.main-section-aboutme-desc p {
+	letter-spacing: 1px;
+}
+
+.main-section-aboutme-desc div {
+	flex-basis: 0;
+}
+
+.main-section-aboutme-content {
+	flex-grow: 2;
+}
+
+.main-section-aboutme-img {
+	min-width: 220px;
+}
+
+.main-section-aboutme-img-wrapper {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	flex-grow: 1;
+}
+
+.main-section-aboutme-img-wrapper span {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 200px;
+	height: 200px;
+	border: 2px solid var(--accent-color);
+	border-radius: 3px;
+}
+
+.main-section-aboutme-img-wrapper img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	border-radius: 3px;
+}
+
+.main-section-aboutme-desc ul {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-left: 20px;
+	margin-top: var(--section-row-gap);
+}
+
+.main-section-workex-container {
+	opacity: 0%;
+	max-width: var(--workex-section-max-width-lg);
+}
+
+.main-section-workex {
+	display: flex;
+}
+
+.main-section-workex-company {
+	display: flex;
+	height: 50px;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 50px;
+	color: var(--gray);
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.main-section-workex-bar {
+	width: 1.5px;
+	height: 50px;
+	background-color: var(--gray);
+	margin-right: 10px;
+}
+
+.main-section-workex-company:nth-of-type(1) .main-section-workex-bar {
+	border-radius: 1px 1px 0 0;
+}
+
+.main-section-workex-company:last-of-type .main-section-workex-bar {
+	border-radius: 0 0 1px 1px;
+}
+
+.slider {
+	position: absolute;
+	display: inline-block;
+	width: 1.5px;
+	height: 50px;
+	margin-left: 10px;
+	background-color: var(--accent-color);
+	transition: transform 0.1s ease-out;
+	border-radius: 2px;
+}
+
+.main-section-workex-details-box {
+	margin: 15px 0;
+	animation: fadeIn 0.5s ease-out forwards;
+}
+
+.main-section-workex-details-box-heading {
+	margin-bottom: 8px;
+}
+
+.main-section-workex-details-desig,
+.main-section-workex-details-company {
+	font-weight: 700;
+}
+
+.main-section-workex-details-desig {
+	color: var(--white);
+}
+
+.main-section-workex-details-company {
+	color: var(--accent-color);
+}
+
+.main-section-workex-details-box-period {
+	font-size: 13px;
+	margin-bottom: 20px;
+	color: var(--gray);
+}
+
+.main-section-workex-details-box ul {
+	list-style: none;
+}
+
+.main-section-workex-details-box-desc {
+	font-weight: 400;
+	color: var(--gray);
+	margin-bottom: 10px;
+}
+
+.main-section-workex-details-box-desc::before {
+	content: "\25B8";
+	padding-right: 8px;
+}
+
+.fw-500,
+.main-section-aboutme-desc li {
+	font-weight: 500;
+}
+
+.main-section-aboutme-desc li::before {
+	content: "\2911";
+	padding-right: 8px;
+}
+
+.text-gray,
+.main-section-aboutme-desc li {
+	color: var(--gray);
+}
+
+.main-section-projects {
+	opacity: 0%;
+	width: var(--projects-section-max-width-lg);
+	position: relative;
+}
+
+.main-section-projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 50px;
+}
+
+.main-section-project-box {
+	position: relative;
+	background-color: rgba(230, 235, 234, 0.1);
+	padding: 20px 30px;
+	border-radius: 5px;
+	width: 260px;
+	min-width: 260px;
+	min-height: 320px;
+	box-sizing: border-box;
+	margin: 30px 0;
+}
+
+.main-section-project-box:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+	transition: transform .2s ease-out;
+}
+
+.main-section-project-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	fill: var(--gray);
+	width: 18px;
+	margin-right: 5px;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+.main-section-project-name {
+	font-weight: 700;
+	color: var(--accent-color);
+	max-width: 150px;
+}
+
+.main-section-project-desc {
+	margin-top: 15px;
+	font-size: 15px;
+	color: var(--gray);
+	margin-bottom: 30px;
+}
+
+.main-section-project-tech-stack {
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+	font-style: italic;
+	font-size: 12px;
+	text-align: end;
+	color: var(--gray);
+}
+
+.main-section-button-container {
+	text-align: center;
+	margin-top: 18px;
+}
+
+.main-section-more-projects,
+.main-section-get-in-touch-say-hello {
+	text-decoration: none;
+	color: var(--accent-color);
+	background-color: rgba(230, 235, 234, 0.1);
+	padding: 12px 15px;
+	border-radius: 5px;
+}
+
+.main-section-more-projects:hover,
+.main-section-get-in-touch-say-hello:hover {
+	box-shadow: 0 0 4px 0px var(--accent-color);
+	transition: box-shadow .2s;
+}
+
+.main-section-get-in-touch {
+	width: var(--main-section-get-in-touch-lg);
+}
+
+.main-section-get-in-touch-desc {
+	color: var(--gray);
+}
+
+.social-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	top: 300px;
+	left: 0;
+	/* background-color: var(--white); */
+	height: max-content;
+	width: 40px;
+}
+
+.social-links a {
+	fill: var(--accent-color);
+	width: 30px;
+	margin: 2px;
+}
+
+.exo-2-b {
+	font-family: "Exo 2", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@keyframes hueRotate {
+
+	0%,
+	100% {
+		filter: hue-rotate(0deg)
+	}
+
+	50% {
+		filter: hue-rotate(-90deg)
+	}
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-110%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.main-section-aboutme {
+		max-width: 700px;
+	}
+
+	.main-section-skills, .main-section-skills-heading p {
+		max-width: 400px;
+	}
+
+	.main-section-workex-container {
+		max-width: 500px;
+	}
+
+	.main-section-projects {
+		max-width: 600px;
+	}
+
+	.main-section-projects-container {
+		justify-content: center;
+	}
+
+	.main-section-get-in-touch {
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.main-section-aboutme {
+		max-width: 600px;
+	}
+
+	.main-section-skills, .main-section-skills-heading p {
+		max-width: 400px;
+	}
+
+	.main-section-workex-container {
+		max-width: 400px;
+	}
+
+	.main-section-projects {
+		max-width: 600px;
+	}
+
+	.main-section-get-in-touch {
+		max-width: 400px;
+	}
+
+	.main-section-aboutme-img {
+		margin: 30px 0;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.main-content {
+		width: 500px;
+	}
+
+	.underline-wrapper {
+		margin-left: 5px;
+		width: 390px;
+	}
+
+	.main-section-aboutme {
+		max-width: 500px;
+	}
+
+	.main-section-aboutme-desc {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.main-content {
+		width: 400px;
+	}
+
+	.underline-wrapper {
+		width: 390px;
+	}
+
+	.main-section-aboutme {
+		max-width: 400px;
+	}
+
+	.main-section-projects {
+		max-width: 400px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.main-content {
+		width: 300px;
+	}
+
+	.underline-wrapper {
+		width: 260px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.main-content {
+		width: 280px;
+	}
+
+	.main-section-aboutme {
+		max-width: 350px;
+	}
+
+	.main-section-skills, .main-section-skills-heading p {
+		max-width: 300px;
+	}
+
+	.main-section-workex-container {
+		max-width: 350px;
+	}
+
+	.main-section-projects {
+		max-width: 350px;
+	}
+
+	.main-section-get-in-touch {
+		max-width: 300px;
+	}
+}

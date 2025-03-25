@@ -1,0 +1,24 @@
+[
+    {
+        "sequence": 1,
+        "company": "Accenture",
+        "period": "Aug 2021 - June 2024",
+        "description": [
+            "Write modern, maintainable code for web applications used by multiple users daily",
+            "Build, maintain & optimize backend APIs using C#/.Net technologies",
+            "Design & enhance databases created in SQL Server, PostgreSQL & MongoDB",
+            "Collaborate with multi-disciplinary teams, UX designers, product managers & clients on regular basis"
+        ]
+    },
+    {
+        "sequence": 2,
+        "company": "WebMD",
+        "period": "June 2024 - Present",
+        "description": [
+            "Demonstrated ability to independently contribute while effectively collaborating within a team to achieve organizational goals",
+            "Build, maintain & optimize backend APIs using C#/.Net technologies",
+            "Create mobile-first, clean & responsive user interfaces using React & jQuery",
+            "Collaborate with multi-disciplinary teams, UX designers, product managers & clients on regular basis"
+        ]
+    }
+]
